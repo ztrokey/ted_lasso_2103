@@ -23,4 +23,11 @@ class Team
       "Sam Obisanya"
     end
   end
+
+  def positions_filled
+    positions_filled = []
+    #the correct answer contains iteration 
+    positions_filled.push(@players[0].position)
+    positions_filled.push(@players[1].position)
+  end
 end
