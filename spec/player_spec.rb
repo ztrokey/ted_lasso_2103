@@ -1,4 +1,4 @@
-
+require 'rspec'
 require './lib/player'
 
 RSpec.describe Player do
