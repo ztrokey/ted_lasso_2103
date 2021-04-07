@@ -8,4 +8,10 @@ class League
   def add_team(team)
     @teams.push(team)
   end
+
+  def captains
+    #this is wrong
+    captains = []
+    captains.push(@teams.team.captain)
+  end
 end

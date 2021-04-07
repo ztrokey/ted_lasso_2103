@@ -29,7 +29,7 @@ pry(main)> roy.position
 pry(main)> roy.salary
 # => 1000000
 ```
-
+#######################
 ## Iteration 2
 
 Use TDD to create a `Team` class that responds to the following interaction pattern:

@@ -16,17 +16,19 @@ class Team
   end
 
   def captain
-    # @players.sort_by { |player| [player.salary] }
-    if @players[0].salary > @players[1].salary
-      "Roy Kent"
-    else
-      "Sam Obisanya"
+    highest_salary = players.first
+
+    players.each do |player|
+      if player.salary > highest_salary.salary
+        highest_salary = player
+      end
     end
+    highest_salary.name
   end
 
   def positions_filled
     positions_filled = []
-    #the correct answer contains iteration 
+    #the correct answer contains iteration
     positions_filled.push(@players[0].position)
     positions_filled.push(@players[1].position)
   end
